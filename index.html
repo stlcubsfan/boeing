@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Boeing Orders</title>
+    <!-- <link href="./bootstra.386/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/> -->
+    <!--<link href="http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css" rel="stylesheet" type="text/css">-->
+    <style>
+
+        h1 {
+            text-align: center;
+            text-shadow: #ccc 4px 4px 3px;
+        }
+        .parts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+        }
+        article {
+            border: 1px solid #ccc;
+            width: 500px;
+            margin: 10px;
+            background-color: #f3f3f3;
+        }
+        b {
+            color: #A00;
+        }
+        header {
+            padding-left: 20px;
+        }
+
+        header h2 {
+            color: #006;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            font-size: 1.3em;
+        }
+        header p {
+            margin-top: -10px;
+            font-weight: bold;
+        }
+        header p b {
+            text-align: right;
+        }
+        footer dl {
+            display: flex;
+            border-top: 1px solid #ccc;
+            flex-wrap: wrap-reverse;
+            margin-left: 20px;
+            align-self: flex-end;
+
+        }
+
+        dt {
+            width: 150px;
+            padding-left: 15px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        @media(max-width: 530px) {
+            dt {
+                width: 300px;
+            }
+            footer dl {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (min-width: 530px) {
+            dd:nth-of-type(odd) {
+                border-right: 1px solid #ccc;
+            }
+        }
+
+        dd {
+            padding-right: 15px;
+            padding-top: 10px;
+            text-align: right;
+
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            min-height: 100px;
+            justify-content: space-around;
+        }
+
+        li {
+            width: 130px;
+            padding-bottom: 10px;
+            padding-right: 5px;
+        }
+        li span:nth-of-type(1) {
+            font-weight: bold;
+            display: block;
+        }
+        li span:nth-of-type(2) {
+            font-size: 0.8em;
+        }
+        body {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            border: none;
+            font: normal 16px/1 "Verdana", Verdana, sans-serif;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            background: -webkit-linear-gradient(-90deg, rgba(255,255,255,1) 0, rgba(0,51,102,1) 100%);
+            background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0, rgba(0,51,102,1) 100%);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0, rgba(0,51,102,1) 100%);
+            background-position: 50% 50%;
+            -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            -webkit-background-size: auto auto;
+            background-size: auto auto;
+        }
+
+    </style>
+</head>
+<body>
+	<h1>Boeing Orders</h1>
+	<section class="parts">
+		<article>
+			<header>
+				<h2>EMERSON NETWORK POWER L3-N</h2>
+				<p><span>Order #:</span> <b>147037</b></p>
+			</header>
+			<ul class="nav nav-list">
+				<li>
+					<span>Category:</span>
+					<span>Appliance</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>EMERSON NETWORK POWER</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>3</dd>
+					<dt>Reserved</dt>
+					<dd>10</dd>
+					<dt>Available</dt>
+					<dd>1</dd>
+					<dt>Quantity</dt>
+					<dd>2</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>Cisco 7965 Phone</h2>
+				<p><span>Order #:</span> <b>147038</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Communication Device</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>Cisco</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC2</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>13</dd>
+					<dt>Available</dt>
+					<dd>4</dd>
+					<dt>Quantity</dt>
+					<dd>1</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>Dell Venue 11 Pro 7130</h2>
+				<p><span>Order #:</span> <b>147039</b></p>
+			</header>
+			<ul class="nav nav-list">
+				<li>
+					<span>Category:</span>
+					<span>Computer</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>Dell</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>4</dd>
+					<dt>Reserved</dt>
+					<dd>14</dd>
+					<dt>Available</dt>
+					<dd>2</dd>
+					<dt>Quantity</dt>
+					<dd>0</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>3Com SUPERSTACK 3 Switch</h2>
+				<p><span>Order #:</span> <b>147040</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Network Gear</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>3Com</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>1 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>1</dd>
+					<dt>Reserved</dt>
+					<dd>12</dd>
+					<dt>Available</dt>
+					<dd>3</dd>
+					<dt>Quantity</dt>
+					<dd>1</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>NetApp 2TB 7.2K RPM 3Gb SATA HDD</h2>
+				<p><span>Order #:</span> <b>147041</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Disk</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>NetApp</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC3</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>1</dd>
+					<dt>Reserved</dt>
+					<dd>9</dd>
+					<dt>Available</dt>
+					<dd>3</dd>
+					<dt>Quantity</dt>
+					<dd>1</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>Cisco Cat 2960X</h2>
+				<p><span>Order #:</span> <b>147042</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Network Gear</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>Cisco</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC2</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>1 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>5</dd>
+					<dt>Available</dt>
+					<dd>3</dd>
+					<dt>Quantity</dt>
+					<dd>0</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>APC SMT3000 SmartUPS 3000V</h2>
+				<p><span>Order #:</span> <b>147043</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span></span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>APC</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC2</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>1 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>12</dd>
+					<dt>Available</dt>
+					<dd>0</dd>
+					<dt>Quantity</dt>
+					<dd>0</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>IBM FlashSystem 840 9843-AE1</h2>
+				<p><span>Order #:</span> <b>147044</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span></span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>IBM</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>1</dd>
+					<dt>Reserved</dt>
+					<dd>4</dd>
+					<dt>Available</dt>
+					<dd>4</dd>
+					<dt>Quantity</dt>
+					<dd>4</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>HP Laser Printer</h2>
+				<p><span>Order #:</span> <b>147045</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Printer</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>HP</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC3</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>12</dd>
+					<dt>Available</dt>
+					<dd>3</dd>
+					<dt>Quantity</dt>
+					<dd>1</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>PELICAN PS Collab Remote Core Kit 1</h2>
+				<p><span>Order #:</span> <b>147046</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Communication Device</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>PELICAN</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC2</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>19</dd>
+					<dt>Available</dt>
+					<dd>5</dd>
+					<dt>Quantity</dt>
+					<dd>0</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>Cisco 40-Channel Single-Module ROADM</h2>
+				<p><span>Order #:</span> <b>147047</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Network Gear</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>Cisco</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>3</dd>
+					<dt>Available</dt>
+					<dd>8</dd>
+					<dt>Quantity</dt>
+					<dd>0</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>MERAKI HARDWARE MS220-8P-HW</h2>
+				<p><span>Order #:</span> <b>147048</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Network Gear</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>MERAKI HARDWARE</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC1</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>1 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>14</dd>
+					<dt>Available</dt>
+					<dd>2</dd>
+					<dt>Quantity</dt>
+					<dd>1</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>NIMBLE Dual Ctlr Field Upgrade to CS500</h2>
+				<p><span>Order #:</span> <b>147049</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Storage Device</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>NIMBLE</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC3</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>3 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>1</dd>
+					<dt>Reserved</dt>
+					<dd>4</dd>
+					<dt>Available</dt>
+					<dd>0</dd>
+					<dt>Quantity</dt>
+					<dd>2</dd>
+				</dl>
+			</footer>
+		</article>
+		<article>
+			<header>
+				<h2>SUPERMICRO SSG-2028R-E1CR24H</h2>
+				<p><span>Order #:</span> <b>147050</b></p>
+			</header>
+			<ul>
+				<li>
+					<span>Category:</span>
+					<span>Network Gear</span>
+				</li>
+				<li>
+					<span>Manufacturer:</span>
+					<span>SUPERMICRO</span>
+				</li>
+				<li>
+					<span>Location:</span>
+					<span>ATC-DC4</span>
+				</li>
+				<li>
+					<span>Height:</span>
+					<span>2 RU</span>
+				</li>
+			</ul>
+			<footer>
+				<dl>
+					<dt>Uninspected</dt>
+					<dd>0</dd>
+					<dt>Reserved</dt>
+					<dd>18</dd>
+					<dt>Available</dt>
+					<dd>5</dd>
+					<dt>Quantity</dt>
+					<dd>2</dd>
+				</dl>
+			</footer>
+		</article>
+	</section>
+</body>
+</html>
